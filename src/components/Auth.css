@@ -1,0 +1,130 @@
+/* Authentication Pages Styling */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #141414 0%, #1a1a1a 100%);
+  padding: 20px;
+}
+
+.auth-box {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 60px 68px 40px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.auth-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group input {
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.form-group input:focus {
+  background-color: #454545;
+}
+
+.form-group input::placeholder {
+  color: #8c8c8c;
+}
+
+.form-group input.input-error {
+  border-bottom: 2px solid #e87c03;
+}
+
+.error-message {
+  color: #e87c03;
+  font-size: 13px;
+  padding-left: 3px;
+}
+
+.error-banner {
+  background-color: #e87c03;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.auth-button {
+  background-color: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  margin-top: 24px;
+  transition: background-color 0.2s;
+}
+
+.auth-button:hover:not(:disabled) {
+  background-color: #f40612;
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-link {
+  color: #737373;
+  font-size: 16px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.auth-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .auth-box {
+    padding: 40px 30px;
+  }
+
+  .auth-title {
+    font-size: 24px;
+  }
+}
